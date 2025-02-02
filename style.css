@@ -19,6 +19,7 @@ main {
     gap: 1rem;
 }
 body {
+    height: 100vh;
     padding-top: 20px;
     display: flex;
     justify-content: center;
