@@ -115,13 +115,14 @@ body {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+
 }
-.popUp p {
+.popUp p, .secondPop p {
     font-size: 0.8rem;
     font-weight: 500;
 }
 
-.popUp button{
+.popUp button, .secondPop button{
     z-index: 999;
     width: 100px;
     border-radius: 999px;
@@ -134,4 +135,33 @@ body {
 }
 .opacityBody {
     filter: brightness(0.1);
+}
+.secondPop {
+    position: absolute;
+    background-color: chocolate;
+    display: none;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    z-index: 999;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#name {
+    border-radius: 999px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0;
+    text-align: center;
+}
+.playerName {
+    font-weight: bolder;
+    display: flex;
+    gap: 0.5rem;
+}
+.secondPop button:hover {
+    filter: brightness(0.5);
 }

@@ -6,6 +6,14 @@ let kertas = "foto/kertas.jpeg";
 //bot
 let botImg = document.querySelector(".bot img");
 
+
+//popup2
+
+let input = document.getElementById("name");
+let btn2 = document.querySelector(".user");
+const secondPop = document.querySelector(".secondPop");
+let changeText = document.getElementById("change");
+
 document.body.addEventListener("mousemove", function (event) {
   const xBagian = Math.round((event.clientX / window.innerWidth) * 255);
   const yBagian = Math.round((event.clientY / window.innerHeight) * 255);
@@ -67,5 +75,23 @@ let popUp = document.querySelector(".popUp");
 let btn = document.getElementById("ok");
 btn.addEventListener("click", function(){
   popUp.style.display = "none";
-  main.classList.toggle("opacityBody")
+  secondPop.style.display = "flex";
+
+
 })
+
+btn2.addEventListener("click", function(){
+
+  let textValue = input.value;
+
+  if (textValue) {
+
+    changeText.innerHTML = textValue;
+    secondPop.style.display = "none";
+    main.classList.toggle("opacityBody");
+    
+  } else {
+    alert("Tolong masukkan nama")
+  }
+})
+
