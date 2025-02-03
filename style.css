@@ -12,7 +12,6 @@ main {
     width: 70%;
     height: 500px;
     box-sizing: border-box;
-    /* padding: 10px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
@@ -21,6 +20,7 @@ main {
 body {
     height: 100vh;
     padding-top: 20px;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,4 +100,38 @@ body {
         width: 70px;
 
     }
+}
+.popUp {
+    background-color: chocolate;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    z-index: 999;
+    position: absolute;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.popUp p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.popUp button{
+    z-index: 999;
+    width: 100px;
+    border-radius: 999px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.popUp button:hover {
+    filter: brightness(0.5);
+}
+.opacityBody {
+    filter: brightness(0.1);
 }

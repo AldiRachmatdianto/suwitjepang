@@ -63,3 +63,9 @@ play[2].addEventListener("click", function () {
       hasil.innerHTML = "Anjay Menang";
     }
 });
+let popUp = document.querySelector(".popUp");
+let btn = document.getElementById("ok");
+btn.addEventListener("click", function(){
+  popUp.style.display = "none";
+  main.classList.toggle("opacityBody")
+})
